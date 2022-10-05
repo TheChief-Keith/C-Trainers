@@ -1,0 +1,37 @@
+// HelloWorld.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Pointers in C++ Intro - https://www.youtube.com/watch?v=fBlM7pR2r_Q
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    std::cout << "Hello World!\n";
+
+    int var = 5; 
+
+    //datatype *pointernames
+    int     *ip; //pointer to a integer
+    double  *dp; //pointer to a double
+    float   *fp; //pointer to a float
+    char    *ch; //pointer to a character
+
+    ip=&var;
+
+    cout << "variable value: " << var << endl; 
+    cout << "Address In Pointer: " << ip << endl; //ip grabs the address in register memory as this lines instructs the system to print out the address
+    cout << "pointer pointing to value: " <<*ip << endl; //shows the value in which the pointer value is changed
+
+    *ip = 6; //insstructs system to change the value to 6 in memory
+
+    ip = &var;
+
+    cout << "variable value: " << var << endl;
+    cout << "Address In Pointer: " << ip << endl;
+    cout << "pointer pointing to value: " << *ip << endl;
+
+    //in the end the shows the program to step to 6 although the variable is 5.  So in C++ you can use the pointer to manipulate the value as we can see because the variable hasn't changed from 5.
+
+    return 0;
+  
