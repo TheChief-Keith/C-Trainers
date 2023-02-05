@@ -1,4 +1,4 @@
-// Pointers in C++ Overview - This is a type of Linked DAta Representation
+// Pointers in C++ Overview - This is a type of Linked Data Representation
 // Pointers in C++ Intro - https://www.youtube.com/watch?v=fBlM7pR2r_Q
 //
 
@@ -23,7 +23,7 @@ int main()
     cout << "Address In Pointer: " << ip << endl; //ip grabs the address in register memory as this lines instructs the system to print out the address
     cout << "pointer pointing to value: " <<*ip << endl; //shows the value in which the pointer value is changed
 
-    *ip = 6; //insstructs system to change the value to 6 in memory
+    *ip = 6; //instructs system to change the value to 6 in memory
 
     ip = &var;
 
