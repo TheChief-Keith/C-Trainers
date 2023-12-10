@@ -34,4 +34,5 @@ int main()
     //in the end the shows the program to step to 6 although the variable is 5.  So in C++ you can use the pointer to manipulate the value as we can see because the variable hasn't changed from 5.
 
     return 0;
+}
   
